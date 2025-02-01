@@ -16,7 +16,7 @@ body {
 header {
     display: flex;
     align-items: center;
-    background-color: #4682b4;
+    background-color: #95c6fe;
     padding: 10px 20px;
 }
 
@@ -33,7 +33,7 @@ header h1 {
 
 /* Navigation styles */
 nav {
-    background-color: #5f9ea0;
+    background-color: #76b8f7;
     padding: 10px;
     text-align: center;
 }
@@ -134,7 +134,7 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-    background-color: #4682b4;
+    background-color: #95c6fe;
     color: white;
     text-align: center;
     padding: 20px 0;
