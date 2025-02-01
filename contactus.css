@@ -94,7 +94,7 @@ nav ul li a:hover {
 }
 
 .contact-form button {
-    background-color: #4682b4;
+    background-color: #76b8f7;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -104,7 +104,7 @@ nav ul li a:hover {
 }
 
 .contact-form button:hover {
-    background-color: #5f9ea0;
+    background-color: #4682b4;
 }
 
 /* Contact info */

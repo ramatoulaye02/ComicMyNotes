@@ -12,11 +12,10 @@ body {
     color: #333;
 }
 
-/* Header styling */
 header {
     display: flex;
     align-items: center;
-    background-color: #4682b4; /* Steel blue */
+    background-color: #95c6fe; /* Steel blue */
     padding: 10px 20px;
 }
 
@@ -31,9 +30,8 @@ header h1 {
     font-size: 2em;
 }
 
-/* Navigation styling */
 nav {
-    background-color: #5f9ea0; /* Cadet blue */
+    background-color: #76b8f7; /* Cadet blue */
     padding: 10px 20px;
     text-align: center;
 }
@@ -133,15 +131,13 @@ nav ul li a:hover {
     color: #333;
 }
 
-/* Footer styling (same as homepage for uniformity) */
 footer {
-    background-color: #4682b4; 
+    background-color: #95c6fe;
     color: white;
     text-align: center;
     padding: 20px 0;
     margin-top: 40px;
 }
-
 footer h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
