@@ -126,17 +126,26 @@ footer p {
     margin: 5px 0;
 }
 
-#get-started-button a {
-    display: inline-block; /* makes the anchor tag behave like a block element */
-    padding: 10px 20px; /* adds space inside the button */
-    background-color: #76b8f7; /* gives the button a background color */
-    color: white; /* text color */
-    text-decoration: none; /* removes underline from the link */
-    border-radius: 15px; /* rounds the corners */
-    font-family: 'Faculty Glyphic', sans-serif;
-    bottom: 20px;
+#get-started-button {
+    text-align: center;
+    margin-top: 20px;
+}
 
-  }
+#get-started-button label {
+    display: inline-block; 
+    padding: 10px 20px; 
+    background-color: #76b8f7; 
+    color: white; 
+    text-decoration: none; 
+    border-radius: 15px; 
+    font-family: 'Faculty Glyphic', sans-serif;
+    cursor: pointer;
+}
+
+#get-started-button label:hover {
+    background-color: #5a9fd9; /* Slightly darker blue when hovering */
+}
+
 
   #wow-image {
     position: absolute; /* Positioning inside the header */
