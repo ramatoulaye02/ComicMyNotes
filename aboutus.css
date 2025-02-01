@@ -74,7 +74,7 @@ nav ul li a:hover {
 }
 
 .about-container h3 {
-    color: #5f9ea0; /* Cadet blue */
+    color: #76b8f7; /* Cadet blue */
     font-size: 1.5em;
     margin-top: 20px;
 }
@@ -93,7 +93,7 @@ nav ul li a:hover {
 }
 
 .about-container ul li {
-    background-color: #5f9ea0;
+    background-color:#76b8f7;
     color: white;
     padding: 10px;
     margin: 5px 0;
@@ -133,7 +133,7 @@ nav ul li a:hover {
 }
 
 footer {
-    background-color: #95c6fe;
+    background-color: #76b8f7;
     color: white;
     text-align: center;
     padding: 20px 0;

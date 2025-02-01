@@ -134,7 +134,8 @@ footer p {
     text-decoration: none; /* removes underline from the link */
     border-radius: 15px; /* rounds the corners */
     font-family: 'Faculty Glyphic', sans-serif;
-   
+    bottom: 20px;
+
   }
 
   #wow-image {
