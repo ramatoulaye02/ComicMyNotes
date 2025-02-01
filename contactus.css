@@ -27,6 +27,7 @@ header .icon {
 }
 
 header h1 {
+    font-family: 'Sigmar One', sans-serif;
     color: white;
     font-size: 2em;
 }
