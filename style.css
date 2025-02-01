@@ -113,7 +113,7 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
-    margin-top: 160px;
+    margin-top: 200px;
 }
 
 footer h3 {
@@ -140,24 +140,24 @@ footer p {
   #wow-image {
     position: absolute; /* Positioning inside the header */
     top: px; /* Adjust as needed */
-    right: 20px; /* Adjust as needed */
+    right: 30px; /* Adjust as needed */
     width: 70px; /* Adjust size */
     height: auto; /* Keeps proportions */
 }
 
 /* Make the background image blurred, centered to the right, and normal size */
 .background-image {
-    position: absolute;         /* Position it anywhere in the page */
-    top: 50%;                    /* Center it vertically */
-    left: 60%;                   /* Center it horizontally */
-    transform: translate(-50%, -50%); /* Fine-tune centering */
-    width: 80vw;                /* Make it cover the full width */
-    height: 80vh;               /* Make it cover the full height */
-    object-fit: cover;           /* Ensure the image covers the area without distortion */
-            /* Apply blur effect */
-    z-index: -1;                 /* Place it behind other content */
-    opacity: 0.2;                /* Adjust transparency */
+    position: fixed;              /* Fix the image in place */
+    top: 50%;                      /* Position it vertically in the middle */
+    left: 50%;                     /* Position it horizontally in the middle */
+    transform: translate(-50%, -50%); /* Center it using translate */
+    width: 30vw;                   /* Set the width to 30% of the viewport width */
+    height: auto;                  /* Keep the aspect ratio */
+    z-index: -1;                   /* Keep it behind other content */
+    opacity: 0.2;                  /* Adjust transparency */
 }
+
+
 
 
 
