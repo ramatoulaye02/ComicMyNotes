@@ -11,6 +11,14 @@ header h1 {
     font-size: 3em;
 }
 
+/* Apply Faculty Glyphic font to paragraphs */
+h2,h3 {
+    font-family: 'Faculty Glyphic', sans-serif;
+    font-size: 1.2em;
+    color: #4ec1f2;
+}
+
+
 
 
 
@@ -25,7 +33,7 @@ body {
 header {
     display: flex;
     align-items: center;
-    background-color: #2F4156; /* Steel blue */
+    background-color: #68a2e5; /* Steel blue */
     padding: 10px 20px;
 }
 
@@ -42,7 +50,7 @@ header h1 {
 
 /* Navigation styling */
 nav {
-    background-color: #5f9ea0; /* Cadet blue */
+    background-color: #7a8cab; /* Cadet blue */
     padding: 10px 20px;
     text-align: center;
 }
@@ -78,7 +86,7 @@ h2 {
 }
 
 h3 {
-    color: #5f9ea0; /* Cadet blue */
+   
     font-size: 1.5em;
 }
 
@@ -93,7 +101,7 @@ div a {
 }
 
 div a:hover {
-    background-color: #5f9ea0; /* Cadet blue */
+    background-color:#7a8cab; /* Cadet blue */
 }
 
 footer {
@@ -113,3 +121,14 @@ footer p {
     font-size: 1.2em;
     margin: 5px 0;
 }
+
+#get-started-button a {
+    display: inline-block; /* makes the anchor tag behave like a block element */
+    padding: 10px 20px; /* adds space inside the button */
+    background-color: #4ec1f2; /* gives the button a background color */
+    color: white; /* text color */
+    text-decoration: none; /* removes underline from the link */
+    border-radius: 15px; /* rounds the corners */
+    font-family: 'Faculty Glyphic', sans-serif;
+  }
+  
