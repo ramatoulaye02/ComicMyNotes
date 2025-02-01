@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - EDUCOMICS</title>
+    <link rel="stylesheet" href="contactus.css">
+</head>
+<body>
+
+    <header>
+        <img src="icon.png" alt="website icon" class="icon">
+        <h1>EDUCOMICS</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="contact-section">
+        <h1>Contact Us</h1>
+        <p>We’d love to hear from you! Reach out using the form below.</p>
+
+        <div class="contact-form">
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="phone" placeholder="Phone">
+                <textarea id="message" placeholder="Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="thank-you-msg" style="display: none;">Thank you for your feedback!</div>
+        </div>
+
+        <div class="contact-info">
+            <div class="info-box">
+                <img src="phone.png" alt="Phone">
+                <p><strong>Phone:</strong> (+1) 123-456-7890</p>
+            </div>
+            <div class="info-box">
+                <img src="email.png" alt="Email">
+                <p><strong>Email:</strong> contact@educomics.com</p>
+            </div>
+            <div class="info-box">
+                <img src="location.webp" alt="Location">
+                <p><strong>Location:</strong> Concordia University, Montreal</p>
+            </div>
+        </div>
+
+        <div class="map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.225130040259!2d-73.57921892367741!3d45.49722697105769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a511990b8bb%3A0x4c5158df4c0b8c8b!2sConcordia%20University!5e0!3m2!1sen!2sca!4v1700000000000"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <footer>
+        <h3>Contact Us</h3>
+        <p>Email: contact@educomics.com | Phone: (+1) 123-456-7890</p>
+        <p>Location: Concordia University, Montreal</p>
+    </footer>
+
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+
+         
+            document.getElementById("thank-you-msg").style.display = "block";
+
+            
+            document.getElementById("contact-form").reset();
+        });
+    </script>
+
+</body>
+</html>
