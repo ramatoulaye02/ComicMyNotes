@@ -85,12 +85,12 @@ div {
 
 h2 {
     color: #4682b4; /* Steel blue */
-    font-size: 2em;
+    font-size: 3em;
 }
 
 h3 {
    
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 div a {
@@ -133,5 +133,14 @@ footer p {
     text-decoration: none; /* removes underline from the link */
     border-radius: 15px; /* rounds the corners */
     font-family: 'Faculty Glyphic', sans-serif;
+   
   }
-  
+
+  #wow-image {
+    position: absolute; /* Positioning inside the header */
+    top: px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    width: 70px; /* Adjust size */
+    height: auto; /* Keeps proportions */
+}
+ 
