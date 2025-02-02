@@ -39,24 +39,18 @@
     </div>
 
   
-    <form id="pdf-form" enctype="multipart/form-data">
-        <div id="get-started-button">
-            <label for="pdf-upload">Upload your PDF to get started!</label>
-            <input type="file" id="pdf-upload" accept="application/pdf" style="display: none;">
-        </div>
-
-        <p id="file-name"></p>
-        <button type="submit">Upload PDF</button>
-    </form>
-
-    
-
+    <div id="get-started-button">
+        <!-- Label that triggers the hidden file input -->
+        <label for="pdf-upload">Upload your PDF to get started!</label>
         
-        
-   
+        <!-- Hidden file input -->
+        <input type="file" id="pdf-upload" accept="application/pdf" style="display: none;">
+    </div>
     
-
-
+    <!-- Display selected file name -->
+    <p id="file-name"></p>
+    
+    
 
     <footer>
         <h3 id="contact-us">Information</h3>
