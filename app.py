@@ -44,6 +44,7 @@ def pdf_upload():
     form = UploadFileForm()
     if form.validate_on_submit():
         file = form.file.data  # Get uploaded file
+        print("Form submitted successfully!")  # Debugging
 
         # Secure filename and add timestamp to prevent overwrites
         filename = f"{secure_filename("uploadedPDF.pdf")}"
@@ -51,6 +52,9 @@ def pdf_upload():
         file.save(file_path)
 
         return "File has been uploaded successfully."
+    else:
+        print("Form validation failed!")  # Debugging
+        print(form.errors)  # Check for errors
 
     return render_template('pdf.html', form=form)
 
