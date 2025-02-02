@@ -4,7 +4,7 @@ from wtforms import FileField, SubmitField
 from wtforms.validators import InputRequired, ValidationError
 from werkzeug.utils import secure_filename
 import os
-import extraction
+
 
 # Flask app setup
 app = Flask(__name__)
