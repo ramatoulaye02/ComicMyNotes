@@ -1,0 +1,15 @@
+for part in parts:
+    messages_panels = [
+        {"role": "system", "content": prompts2.system_message_panels},
+        {"role": "user", "content": prompts2.generate_prompt_panels(part)},
+    ]
+
+    completion = client.beta.chat.completions.parse(
+        model=model,
+        messages=messages_panels,
+        temperature=temperature,
+        max_tokens=max_tokens,
+        response_format=ComicPage,
+    )
+    
+    book.append(completion.choices[0].message.parsed.page)
