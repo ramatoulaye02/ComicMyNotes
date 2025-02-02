@@ -16,7 +16,7 @@ os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 
 # Form for file upload
 class UploadFileForm(FlaskForm):
-    file = FileField("Upload a PDF", validators=[InputRequired()])
+    file = FileField("Upload a PDF !", validators=[InputRequired()])
     submit = SubmitField("Upload")
 
     # Custom validator to allow only PDF files
