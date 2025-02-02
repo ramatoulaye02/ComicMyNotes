@@ -1,0 +1,13 @@
+{
+    "main_theme": "Numerical Methods in Engineering",
+    "subthemes": [
+        "Understanding numerical algorithms for root finding",
+        "Application of bracketing methods for root location",
+        "Challenges in solving nonlinear equations with varying algorithms",
+        "Selection criteria for commercial software in numerical problem-solving",
+        "Matrix representation and LU decomposition in systems of equations",
+        "Implementation of Newton's method for root location",
+        "Graphical approximation of solutions in numerical methods",
+        "Significance of precision and error estimation in numerical calculations"
+    ]
+}

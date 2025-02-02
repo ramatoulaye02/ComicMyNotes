@@ -4,7 +4,7 @@ from wtforms import FileField, SubmitField
 from wtforms.validators import InputRequired, ValidationError
 from werkzeug.utils import secure_filename
 import os
-
+import extraction
 
 # Flask app setup
 app = Flask(__name__)
@@ -50,6 +50,7 @@ def pdf_upload():
         file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
         file.save(file_path)
 
+        extraction.extract_and_save_concepts() # extract to json (we need the next steps from rama)
         return "File has been uploaded successfully."
     else:
         print("Form validation failed!")  # Debugging
