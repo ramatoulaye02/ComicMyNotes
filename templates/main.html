@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <script src="js/script.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,9 +13,9 @@
 <body>
 
     <header>
-        <img src="icon.png" alt="website icon" class="icon">
+        <img src="{{ url_for('static', filename='images/icon.png') }}" alt="website icon" class="icon">
         <h1>EDUCOMICS</h1>
-        <img src="wow.png" alt="Wow Image" id="wow-image">
+        <img src="{{ url_for('static', filename='images/wow.png') }}" alt="Wow Image" id="wow-image">
     </header>
 
     <nav>
@@ -26,7 +26,7 @@
         </ul>
     </nav>
 
-    <img src="pow.png" alt="Background Image" class="background-image">
+    <img src="{{ url_for('static', filename='images/pow.png') }}" alt="Background Image" class="background-image">
 
 
 
@@ -39,18 +39,10 @@
     </div>
 
   
-    <div id="get-started-button">
-        <!-- Label that triggers the hidden file input -->
-        <label for="pdf-upload">Upload your PDF to get started!</label>
-        
-        <!-- Hidden file input -->
-         </div>
-    
-
          
          <div id="get-started-button">
             <!-- Link that redirects to pdf.html inside the 'terminals' folder -->
-            <a href="templates/pdf.html">
+            <a href="{{ url_for('pdf_upload') }}">
                 <!-- Label that triggers the link -->
                 <label>Upload your PDF to get started!</label>
             </a>

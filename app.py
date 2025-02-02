@@ -24,14 +24,20 @@ class UploadFileForm(FlaskForm):
         if not field.data.filename.lower().endswith('.pdf'):
             raise ValidationError("Only PDF files are allowed!")
 
-@app.route('/', methods=['GET', 'POST'])
-def home():
+@app.route('/', methods=['GET'])
+def main_page():
+    # Serve the main page (landing page)
+    return render_template('main.html')
+
+
+@app.route('/upload', methods=['GET', 'POST'])
+def pdf_upload():
     form = UploadFileForm()
     if form.validate_on_submit():
         file = form.file.data  # Get uploaded file
 
         # Secure filename and add timestamp to prevent overwrites
-        filename = f"{datetime.now().strftime('%Y%m%d%H%M%S')}_{secure_filename(file.filename)}"
+        filename = f"{secure_filename("uploadedPDF.pdf")}"
         file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
         file.save(file_path)
 
