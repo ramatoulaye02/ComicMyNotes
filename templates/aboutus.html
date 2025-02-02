@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="aboutus.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/aboutus.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,15 +12,15 @@
 <body>
 
     <header>
-        <img src="icon.png" alt="website icon" class="icon">
+        <img src="{{ url_for('static', filename='images/icon.png') }}" alt="website icon" class="icon">
         <h1>EDUCOMICS</h1>
     </header>
 
     <nav>
         <ul>
-            <li><a href="main.html">Home</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="{{ url_for('main_page') }}">Home</a></li>
+            <li><a href="{{ url_for('about_us') }}">About Us</a></li>
+            <li><a href="{{ url_for('contact_us') }}">Contact Us</a></li>
         </ul>
     </nav>
 
@@ -45,19 +45,19 @@
         <h3>👩💻 Meet the Team</h3>
         <div class="team-section">
             <div class="team-member">
-                <img src="people.jpg" alt="Maria's picture">
+                <img src="{{ url_for('static', filename='images/people.jpg') }}" alt="Maria's picture">
                 <p><strong>Maria</strong></p>
             </div>
             <div class="team-member">
-                <img src="people.jpg" alt="Wiame's picture">
+                <img src="{{ url_for('static', filename='images/people.jpg') }}" alt="Wiame's picture">
                 <p><strong>Wiame</strong></p>
             </div>
             <div class="team-member">
-                <img src="people.jpg" alt="Rama's picture">
+                <img src="{{ url_for('static', filename='images/people.jpg') }}" alt="Rama's picture">
                 <p><strong>Rama</strong></p>
             </div>
             <div class="team-member">
-                <img src="people.jpg" alt="Soukayna's picture">
+                <img src="{{ url_for('static', filename='images/people.jpg') }}" alt="Soukayna's picture">
                 <p><strong>Soukayna</strong></p>
             </div>
         </div>

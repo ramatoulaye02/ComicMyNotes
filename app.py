@@ -29,6 +29,15 @@ def main_page():
     # Serve the main page (landing page)
     return render_template('main.html')
 
+@app.route('/aboutus', methods=['GET'])
+def about_us():
+    # Serve the main page (landing page)
+    return render_template('aboutus.html')
+
+@app.route('/contactus', methods=['GET'])
+def contact_us():
+    # Serve the main page (landing page)
+    return render_template('contactus.html')
 
 @app.route('/upload', methods=['GET', 'POST'])
 def pdf_upload():

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - EDUCOMICS</title>
-    <link rel="stylesheet" href="contactus.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/contactus.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,15 +14,15 @@
 <body>
 
     <header>
-        <img src="icon.png" alt="website icon" class="icon">
+        <img src="{{ url_for('static', filename='images/icon.png') }}" alt="website icon" class="icon">
         <h1>EDUCOMICS</h1>
     </header>
 
     <nav>
         <ul>
-            <li><a href="main.html">Home</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="{{ url_for('main_page') }}">Home</a></li>
+            <li><a href="{{ url_for('about_us') }}">About Us</a></li>
+            <li><a href="{{ url_for('contact_us') }}">Contact Us</a></li>
         </ul>
     </nav>
 
@@ -44,15 +44,15 @@
 
         <div class="contact-info">
             <div class="info-box">
-                <img src="phone.png" alt="Phone">
+                <img src="{{ url_for('static', filename='images/phone.png') }}" alt="Phone">
                 <p><strong>Phone:</strong> 514-647-2673</p>
             </div>
             <div class="info-box">
-                <img src="email.png" alt="Email">
+                <img src="{{ url_for('static', filename='images/email.png') }}" alt="Email">
                 <p><strong>Email:</strong> contact@educomics.com</p>
             </div>
             <div class="info-box">
-                <img src="location.webp" alt="Location">
+                <img src="{{ url_for('static', filename='images/location.webp') }}" alt="Location">
                 <p><strong>Location:</strong> Concordia University, Montreal</p>
             </div>
         </div>
