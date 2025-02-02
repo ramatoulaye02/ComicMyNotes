@@ -79,12 +79,7 @@ nav ul li a:hover {
 }
 
 /* Main content styles */
-h1 {
-    text-align: center;
-    font-size: 2.5em;
-    color: #003366; /* Deep blue for heading */
-    margin-top: 40px;
-}
+
 
 /* Form styling */
 form {
