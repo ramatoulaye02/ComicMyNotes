@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Caveat:wght@400..700&family=Faculty+Glyphic&display=swap" rel="stylesheet">
+
     <title>Upload PDF</title>
 </head>
 <body>
@@ -21,7 +26,7 @@
             <li><a href="{{ url_for('contact_us') }}">Contact Us</a></li>
         </ul>
     </nav>
-    <h1>Upload a PDF</h1>
+    
 
     <form action="{{ url_for('pdf_upload') }}" method="POST" enctype="multipart/form-data">
         {{ form.hidden_tag() }}  <!-- CSRF Token -->

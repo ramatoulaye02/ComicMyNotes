@@ -7,30 +7,41 @@
 
 /* Body styles */
 body {
-    font-family: 'Caveat', sans-serif;
-    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
     color: #333;
 }
 
-/* Header styles */
-header {
-    display: flex;
-    align-items: center;
-    background-color: #003366; /* Deep blue color */
-    padding: 10px 20px;
+h2,h3 {
+    font-family: 'Faculty Glyphic', sans-serif;
+    font-size: 1.2em;
+    color: #4ec1f2;
 }
 
-header .icon {
-    width: 50px;
-    height: 50px;
-    margin-right: 15px;
+/* Header styles */
+/* Header styling */
+header {
+    display: flex;                /* Align items horizontally */
+    align-items: center;          /* Center items vertically */
+    background-color: #95c6fe;   /* Light blue background */
+    padding: 10px 20px;          /* Padding for spacing */
 }
 
 header h1 {
-    font-family: 'Sigmar One', sans-serif;
-    color: white;
-    font-size: 2.5em;
+    color: white;                /* White text color */
+    font-size: 2em;              /* Consistent font size */
 }
+
+header .icon {
+    width: 50px;                /* Icon size */
+    height: 50px;               /* Icon size */
+    margin-right: 15px;         /* Spacing between icon and text */
+}
+#contact-us{
+    color:white;
+}
+
+
 
 /* Navigation styles */
 nav {
@@ -106,11 +117,11 @@ form button:hover {
 
 /* Footer styles */
 footer {
-    background-color: #003366; /* Deep blue for footer */
+    background-color: #76b8f7; 
     color: white;
     text-align: center;
     padding: 20px 0;
-    margin-top: 40px;
+    margin-top: 400px;
 }
 
 footer h3 {
