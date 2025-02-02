@@ -4,7 +4,7 @@ from wtforms import FileField, SubmitField
 from wtforms.validators import InputRequired, ValidationError
 from werkzeug.utils import secure_filename
 import os
-from datetime import datetime
+import extraction
 
 # Flask app setup
 app = Flask(__name__)
@@ -44,7 +44,6 @@ def pdf_upload():
     form = UploadFileForm()
     if form.validate_on_submit():
         file = form.file.data  # Get uploaded file
-        print("Form submitted successfully!")  # Debugging
 
         # Secure filename and add timestamp to prevent overwrites
         filename = f"{secure_filename("uploadedPDF.pdf")}"
