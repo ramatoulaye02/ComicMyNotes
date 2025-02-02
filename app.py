@@ -5,6 +5,7 @@ from wtforms.validators import InputRequired, ValidationError
 from werkzeug.utils import secure_filename
 import os
 import extraction
+import generate_comic
 
 # Flask app setup
 app = Flask(__name__)
@@ -16,7 +17,7 @@ os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 
 # Form for file upload
 class UploadFileForm(FlaskForm):
-    file = FileField("Upload a PDF", validators=[InputRequired()])
+    file = FileField("Upload a PDF !", validators=[InputRequired()])
     submit = SubmitField("Upload")
 
     # Custom validator to allow only PDF files
@@ -50,14 +51,15 @@ def pdf_upload():
         file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
         file.save(file_path)
 
-        extraction.extract_and_save_concepts() # extract to json (we need the next steps from rama)
-        return "File has been uploaded successfully."
+        extraction.extract_and_save_concepts() # extract to json
+        generate_comic.get_book(r"concepts.json")
+        return render_template('display.html')
+    
     else:
         print("Form validation failed!")  # Debugging
         print(form.errors)  # Check for errors
 
     return render_template('pdf.html', form=form)
-
 
 if __name__ == '__main__':
     app.run(debug=True)

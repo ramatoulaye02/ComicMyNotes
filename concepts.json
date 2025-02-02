@@ -1,13 +1,12 @@
 {
-    "main_theme": "Application for PHP Developer Internship",
+    "main_theme": "World War I and Its Implications",
     "subthemes": [
-        "Programming Languages and Technologies Expertise",
-        "Desire for Technological Advancement",
-        "Teamwork and Curiosity in Complex Systems",
-        "Agile Development Skills",
-        "Significance of Mentorship and Professional Development",
-        "Contribution to Payroll and Human Resources Applications",
-        "Opportunity for Meaningful Project Involvement",
-        "Commitment to Personal and Professional Growth"
+        "Origins of the War",
+        "U.S. Response to the European Conflict",
+        "Progressive Ideals and U.S. Foreign Policy",
+        "Challenges of Neutrality",
+        "U.S. Entry into the War",
+        "Wilson's 14 Points and Peace Efforts",
+        "Impact of the Treaty of Versailles"
     ]
 }
