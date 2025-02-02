@@ -1,28 +1,46 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from flask_wtf import FlaskForm
 from wtforms import FileField, SubmitField
+from wtforms.validators import InputRequired, ValidationError
 from werkzeug.utils import secure_filename
 import os
-from wtforms.validators import InputRequired
+from datetime import datetime
 
+# Flask app setup
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'supersecretkey'  # Or use secrets.token_hex(16) for security
+app.config['SECRET_KEY'] = 'supersecretkey'  # Use secrets.token_hex(16) for better security
 app.config['UPLOAD_FOLDER'] = 'static/files'
 
-class UploadFileForm(FlaskForm):
-    file = FileField("File", validators=[InputRequired()])
-    submit = SubmitField("Upload File")
+# Ensure upload directory exists
+os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 
-@app.route('/', methods=['GET', "POST"])
-@app.route('/home', methods=['GET', "POST"])
+# Form for file upload
+class UploadFileForm(FlaskForm):
+    file = FileField("Upload a PDF", validators=[InputRequired()])
+    submit = SubmitField("Upload")
+
+    # Custom validator to allow only PDF files
+    def validate_file(self, field):
+        if not field.data.filename.lower().endswith('.pdf'):
+            raise ValidationError("Only PDF files are allowed!")
+
+@app.route('/', methods=['GET', 'POST'])
 def home():
     form = UploadFileForm()
     if form.validate_on_submit():
-        file = form.file.data
-        file.save(os.path.join(os.path.abspath(os.path.dirname(__file__)), app.config['UPLOAD_FOLDER'], secure_filename(file.filename)))
-        return "File has been uploaded."
+        file = form.file.data  # Get uploaded file
+
+        # Secure filename and add timestamp to prevent overwrites
+        filename = f"{datetime.now().strftime('%Y%m%d%H%M%S')}_{secure_filename(file.filename)}"
+        file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+        file.save(file_path)
+
+        return "File has been uploaded successfully."
+
     return render_template('pdf.html', form=form)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
 
+    
