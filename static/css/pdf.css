@@ -12,61 +12,70 @@ body {
     color: #333;
 }
 
-h2,h3 {
-    font-family: 'Faculty Glyphic', sans-serif;
+/* Headings */
+h2, h3 {
+    font-family: 'Faculty Glyphic', sans-serif; /* Correct font family */
     font-size: 1.2em;
-    color: #4ec1f2;
+    color: #4ec1f2; /* Light blue text color */
 }
 
-/* Header styles */
-/* Header styling */
+h2 {
+    font-size: 3em; /* Larger font size for h2 */
+    color: #4682b4; /* Steel blue color */
+}
+
+h3 {
+    font-size: 2em; /* Font size for h3 */
+}
+
 header {
-    display: flex;                /* Align items horizontally */
-    align-items: center;          /* Center items vertically */
-    background-color: #95c6fe;   /* Light blue background */
-    padding: 10px 20px;          /* Padding for spacing */
-}
-
-header h1 {
-    color: white;                /* White text color */
-    font-size: 2em;              /* Consistent font size */
+    display: flex;
+    align-items: center;
+    background-color: #95c6fe;
+    padding: 10px 20px;
 }
 
 header .icon {
-    width: 50px;                /* Icon size */
-    height: 50px;               /* Icon size */
-    margin-right: 15px;         /* Spacing between icon and text */
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
 }
-#contact-us{
-    color:white;
+
+header h1 {
+    font-family: 'Sigmar One', sans-serif;
+    color: white;
+    font-size: 2em;
 }
 
 
+#contact-us {
+    color: white;
+}
 
 /* Navigation styles */
 nav {
     background-color: #76b8f7; /* Lighter blue */
-    padding: 10px;
-    text-align: center;
+    padding: 10px 20px;        /* Padding for spacing */
+    text-align: center;        /* Center the navigation links */
 }
 
 nav ul {
-    list-style-type: none;
+    list-style-type: none;     /* Remove bullet points */
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: inline;           /* Display links horizontally */
+    margin: 0 15px;            /* Spacing between links */
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.2em;
+    text-decoration: none;     /* Remove underline */
+    color: white;              /* White text color */
+    font-size: 1.2em;          /* Font size */
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Underline on hover */
 }
 
 /* Main content styles */
