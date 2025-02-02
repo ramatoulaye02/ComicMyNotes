@@ -1,0 +1,139 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333;
+}
+
+/* Headings */
+h2, h3 {
+    font-family: 'Faculty Glyphic', sans-serif; /* Correct font family */
+    font-size: 1.2em;
+    color: #4ec1f2; /* Light blue text color */
+}
+
+h2 {
+    font-size: 3em; /* Larger font size for h2 */
+    color: #4682b4; /* Steel blue color */
+}
+
+h3 {
+    font-size: 2em; /* Font size for h3 */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #95c6fe;
+    padding: 10px 20px;
+}
+
+header .icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+header h1 {
+    font-family: 'Sigmar One', sans-serif;
+    color: white;
+    font-size: 2em;
+}
+
+
+#contact-us {
+    color: white;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #76b8f7; /* Lighter blue */
+    padding: 10px 20px;        /* Padding for spacing */
+    text-align: center;        /* Center the navigation links */
+}
+
+nav ul {
+    list-style-type: none;     /* Remove bullet points */
+}
+
+nav ul li {
+    display: inline;           /* Display links horizontally */
+    margin: 0 15px;            /* Spacing between links */
+}
+
+nav ul li a {
+    text-decoration: none;     /* Remove underline */
+    color: white;              /* White text color */
+    font-size: 1.2em;          /* Font size */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Main content styles */
+
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+form label {
+    font-size: 1.2em;
+    color: #003366; /* Deep blue for labels */
+    margin-bottom: 10px;
+}
+
+form input[type="file"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50%;
+}
+
+form button {
+    background-color: #003366; /* Deep blue for button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    width: 50%;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background-color: #005f8a; /* Darker blue on hover */
+}
+
+/* Footer styles */
+footer {
+    background-color: #76b8f7; 
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 400px;
+}
+
+footer h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 1.2em;
+    margin: 5px 0;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Caveat:wght@400..700&family=Faculty+Glyphic&display=swap" rel="stylesheet">
+
+    <title>EDUCOMICS</title>
+</head>
+<body>
+
+    <header>
+        <img src="{{ url_for('static', filename='images/icon.png') }}" alt="website icon" class="icon">
+        <h1>EDUCOMICS</h1>
+        <img src="{{ url_for('static', filename='images/wow.png') }}" alt="Wow Image" id="wow-image">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('main_page') }}">Home</a></li>
+            <li><a href="{{ url_for('about_us') }}">About Us</a></li>
+            <li><a href="{{ url_for('contact_us') }}">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <img src="{{ url_for('static', filename='images/pow.png') }}" alt="Background Image" class="background-image">
+
+
+
+    <div>
+        <h2>Studying made fun with AI-powered </h2>
+        <br>
+        <h2>comics !</h2>
+        <br>
+        <h3>Get a comic that will summarize your notes</h3>
+    </div>
+
+  
+         
+         <div id="get-started-button">
+            <!-- Link that redirects to pdf.html inside the 'terminals' folder -->
+            <a href="{{ url_for('pdf_upload') }}">
+                <!-- Label that triggers the link -->
+                <label>Upload your PDF to get started!</label>
+            </a>
+        </div>
+    
+    <!-- Display selected file name -->
+    <p id="file-name"></p>
+    
+    
+
+    <footer>
+        <h3 id="contact-us">Information</h3>
+        <p>Email: contact@educomics.com</p>
+        <p>Phone: 514-647-2673</p>
+        
+    </footer>
+
+    
+</body>
+</html>
