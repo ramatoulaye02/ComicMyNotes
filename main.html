@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="js/script.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,11 +39,16 @@
     </div>
 
   
-    <div id="get-started-button">
-        <label for="pdf-upload">Upload your pdf to get started ! </label>
-        <input type="file" id="pdf-upload" accept="application/pdf" style="display: none;">
-    </div>
-    <p id="file-name"></p>
+    <form id="pdf-form" enctype="multipart/form-data">
+        <div id="get-started-button">
+            <label for="pdf-upload">Upload your PDF to get started!</label>
+            <input type="file" id="pdf-upload" accept="application/pdf" style="display: none;">
+        </div>
+
+        <p id="file-name"></p>
+        <button type="submit">Upload PDF</button>
+    </form>
+
     
 
         
