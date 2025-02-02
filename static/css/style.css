@@ -131,20 +131,31 @@ footer p {
     margin-top: 20px;
 }
 
+#get-started-button a {
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Ensure inline-block behavior */
+    padding: 0; /* No padding to prevent unwanted spacing */
+    border: none; /* Remove any border around the anchor */
+    background-color: transparent; /* Ensure no background color on the <a> tag */
+}
+
 #get-started-button label {
-    display: inline-block; 
-    padding: 10px 20px; 
-    background-color: #76b8f7; 
-    color: white; 
-    text-decoration: none; 
-    border-radius: 15px; 
+    padding: 10px 20px; /* Add padding to the label itself */
+    color: white; /* White text color */
+    background-color: #76b8f7; /* Keep the blue background for the button */
     font-family: 'Faculty Glyphic', sans-serif;
     cursor: pointer;
+    border-radius: 15px; /* Rounded corners for the label */
+    font-weight: bold; /* Make the text bold */
+    display: inline-block; /* Make sure the label behaves like a block */
+    border: none; /* Remove any border around the label */
 }
 
 #get-started-button label:hover {
-    background-color: #5a9fd9; /* Slightly darker blue when hovering */
+    background-color: #5a9fd9; /* Slightly darker blue on hover */
 }
+
+
 
 
   #wow-image {
